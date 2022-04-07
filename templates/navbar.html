@@ -1,0 +1,41 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="{% url 'pybo:index' %}">Home</a>
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div>
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="http://127.0.0.1:8000/pybo/tour_info">
+                        <img src="/static/img/ti_icon.png">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://127.0.0.1:8000/pybo/tour_street">
+                        <img src="/static/img/ts_icon.png">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://127.0.0.1:8000/pybo/tour_motel">
+                        <img src="/static/img/tm_icon.png">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://127.0.0.1:8000/pybo/restaurant">
+                        <img src="/static/img/rt_icon.png">
+                    </a>
+                </li>
+              </ul>
+        </div>
+        <div>
+            <button type="button" class="btn btn-danger">Login</button>
+        </div>
+    </div>    
+          
+</nav>

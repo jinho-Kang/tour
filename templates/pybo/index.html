@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+    <div class="container" style="background-color:aliceblue; opacity: 0.8; margin-top:100px; margin-bottom:100px;" >
+        <div class="container-fluid">
+            <div class="container1">
+                <header>
+                    <br>
+                    <h1 style="text-align: center; font-size:48px">B3A2</h2>
+                </header>
+            </div>
+            <br>
+            <div class="container2">
+                <section>
+                    <nav>
+                        <h1>Crew Member</h1>
+                        <table style="width:80%; margin:auto;">
+                            <thead >
+                                <tr>
+                                <th><img class="profile_img" src="../../static/img/강진호_조로.jpg"></th>
+                                <th><img class="profile_img" src="../../static/img/고유찬_루피.png"></th>
+                                <th><img class="profile_img" src="../../static/img/김동규_우솝.png"></th>
+                                <th><img class="profile_img" src="../../static/img/김명식_쵸파.png"></th>
+                                <th><img class="profile_img" src="../../static/img/최홍빈_프랑키.png"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                <td><b>강진호</b></td>
+                                <td><b>고유찬</b></td>
+                                <td><b>김동규</b></td>
+                                <td><b>김명식</b></td>
+                                <td><b>최홍빈</b></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </nav>
+                        <br>
+                    <nav>
+                        <h1>Programs and Data</h1>
+                        <div style="display:inline-block;">
+                            <a href="https://www.djangoproject.com/" target="_blank"><img class="programs" src="../../static/img/django.png"></a>
+                            <a href="https://code.visualstudio.com/" target="_blank"><img class="programs" src="../../static/img/vscode.png"></a>
+                            <a href="https://www.python.org/" target="_blank"><img class="programs" src="../../static/img/python.png"></a>
+                            <a href="https://www.mysql.com/" target="_blank"><img class="programs" src="../../static/img/mysql.png"></a>
+                            <a href="https://www.google.com/maps" target="_blank"><img class="programs" src="../../static/img/googlemaps.png"></a>
+                            <a href="https://python-visualization.github.io/folium/ " target="_blank"><img class="programs" src="../../static/img/folium.jpg"></a>
+                            <a href="https://www.javascript.com/" target="_blank"><img class="programs" src="../../static/img/javascript.png"></a>
+                            <a href="https://ko.wikipedia.org/wiki/HTML" target="_blank"><img class="programs" src="../../static/img/html.png"></a>
+                            <a href="https://ko.wikipedia.org/wiki/CSS" target="_blank"><img class="programs" src="../../static/img/css.png"></a>
+                        <div>
+                        <br>
+                    </nav>
+                    <br>
+                    <article style="display:inline;">
+                        <h1>Project Introduction</h1>
+                        <div class="list-group">
+                            <button type="button" class="list-group-item list-group-item-action active" aria-current="true">
+                              프로젝트 소개
+                            </button>
+                            <button type="button" class="list-group-item list-group-item-action"><a href="motivation">프로젝트 동기</a></button>
+                            <button type="button" class="list-group-item list-group-item-action"><a href="process">프로젝트 진행과정</a></button>
+                            <button type="button" class="list-group-item list-group-item-action"><a href="troubleShooting">TroubleShooting</a></button>
+                            <button type="button" class="list-group-item list-group-item-action"><a href="goal">향후 계획</a></button>        
+                          </div>
+                          
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    </article>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

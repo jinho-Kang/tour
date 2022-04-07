@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+    <div class="container" style="background-color:aliceblue; opacity: 0.8; margin-top:100px; margin-bottom:100px;" >
+        <div class="container-fluid">
+            <div class="container1">
+                <header>
+                    <br>
+                    <h1 style="text-align: center; font-size:48px">TroubleShooting</h1>
+                </header>
+            </div>
+            <br>
+            <div class="container2" style="margin-bottom:50px;">
+                <ul>
+                <li class="process_font">장고에서 모델을 인식할 때 id라는 컬럼으로 데이터 모델을 인식합니다.</li>
+                <li class="process_font" style="margin-bottom: 10px;">따라서 아래와 같이 mysql에 있는 우리의 table들에도 id라는 컬럼을 추가해줬습니다.</li>
+                <img src="../../static/img/id컬럼.png">
+                <li class="process_font" style="margin-top: 10px; margin-bottom: 10px;">그리고 원래 저희 사이트의 문제점은 아래의 코드를 보시다시피 페이지를 바꿀 때마다 모든 모델을 불러옵니다.</li>
+                <img src="../../static/img/모델불러오기_수정전.png">
+                <li class="process_font" style="margin-top: 10px;">그래서 성능도 느려지고 지도에 모든 가게(모델)들을 표현한다는 문제점이 있었습니다.</li>
+                <li class="process_font" style="margin-top: 10px;">그래서 이러한 문제점을 보완하고자 코드를 수정했습니다.</li>
+                <li class="process_font" style="margin-top: 10px;">아래는 수정된 코드이고 간략하게 설명하자면 페이지 당 모델 10개만 불러오는 코드입니다.</li>
+                <img style="margin-top: 10px;" src="../../static/img/모델불러오기_수정후.png">
+                <li class="process_font" style="margin-top: 10px;">따라서 이러한 문제 해결들을 통해 저희 웹 사이트는 발전할 수 있었습니다.</li>
+            </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
