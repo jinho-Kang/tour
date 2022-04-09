@@ -1,4 +1,3 @@
-from socket import fromshare
 from django import forms
 from pybo.models import Question,Answer
 
